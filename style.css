@@ -1,0 +1,53 @@
+* {
+    font-family: serif;
+    font-size: 20px;
+}
+
+body {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 5px;
+    gap: 15px;
+}
+
+button, #filler, .answer-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+    border-width: 1px;
+    
+    width: 40px;
+    height: 40px;
+}
+
+button:active {
+    border-width: 2px;
+}
+
+.number-pad {
+    border: solid;
+    background-color: beige;
+    border-radius: 8px;
+    border-width: 2px;
+}
+
+.answer-field {
+    margin: 15px;
+    height: 40;
+    width: 205px;
+    background-color: aliceblue;
+    border: solid;
+    border-radius: 5px;
+    border-width: 1px;
+
+    justify-content: right;
+    padding-right: 5px;
+}
