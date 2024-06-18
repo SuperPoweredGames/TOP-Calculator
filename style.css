@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
 * {
-    font-family: serif;
+    font-family: "Inconsolata", serif;
     font-size: 20px;
 }
 
@@ -11,9 +13,8 @@ body {
 .row {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
-    padding: 5px;
-    gap: 15px;
+    margin: 0px 10px;
+    padding: 2px 5px;
 }
 
 button, #filler, .answer-field {
@@ -24,17 +25,18 @@ button, #filler, .answer-field {
     border-radius: 5px;
     border-width: 1px;
     
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 button:active {
     border-width: 2px;
+    border-color: white;
 }
 
 .number-pad {
     border: solid;
-    background-color: beige;
+    background-color:darkslategray;
     border-radius: 8px;
     border-width: 2px;
 }
@@ -50,4 +52,25 @@ button:active {
 
     justify-content: right;
     padding-right: 5px;
+}
+
+#num1, #num2, #num3, #num4, #num5, #num6, #num7, #num8, #num9, #num0 {
+    background-color: lightgoldenrodyellow;
+}
+
+#add, #multiply, #subtract, #divide, #equals {
+    background-color: lightpink;
+}
+
+#clear, #neg, #percent, #decimal {
+    background-color: lightgreen;
+}
+
+.botmargin {
+    margin-bottom: 15px;
+}
+
+#delete {
+    background-color: darkred;
+    color:gainsboro;
 }
