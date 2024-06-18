@@ -135,21 +135,38 @@ function handleNumberInput(input) {
 }
 
 function add(a,b){
-    return Math.round((parseFloat(a) + parseFloat(b)) * 100000) / 100000;
+    Math.round(a * 10000) / 10000;
+    Math.round(b * 10000) / 10000;
+    let c;
+    c = Math.round((parseFloat(a) + parseFloat(b)) * 100000) / 100000;
+    return c.toPrecision(7);
 }
 
 function subtract(a,b){
-    return Math.round((parseFloat(a) - parseFloat(b)) * 100000) / 100000;
+    Math.round(a * 10000) / 10000;
+    Math.round(b * 10000) / 10000;
+    let c;
+    c = Math.round((parseFloat(a) - parseFloat(b)) * 100000) / 100000;
+    return c.toPrecision(7);
 }
 
 function multiply(a,b){
-    return Math.round((parseFloat(a) * parseFloat(b)) * 100000) / 100000;
+    Math.round(a * 10000) / 10000;
+    Math.round(b * 10000) / 10000;
+    let c;
+    c = Math.round((parseFloat(a) * parseFloat(b)) * 100000) / 100000;
+    return c.toPrecision(7);
 }
 
 function divide(a,b){
-    if(parseFloat(b) != 0)
-        return Math.round((parseFloat(a) / parseFloat(b)) * 100000) / 100000;
-    else
+    Math.round(a * 10000) / 10000;
+    Math.round(b * 10000) / 10000;
+    let c;
+    
+    if(parseFloat(b) != 0) {
+        c =  Math.round((parseFloat(a) / parseFloat(b)) * 100000) / 100000;
+        return c.toPrecision(7);
+    } else
         return 0;
 }
 
